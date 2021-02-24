@@ -1,5 +1,5 @@
 {
-  "name": "webpack-starter-kit",
+  "name": "web-weather",
   "version": "1.1.0",
   "description": "Для корректной работы SASS-компилятора и других инструментов, необходимо один\r раз глобально поставить дополнительные пакеты, выполнив в терминале следующие\r команды. Пользователям MacOS ничего делать не нужно.",
   "main": "index.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luxplanjay/webpack-starter-kit.git"
+    "url": "git+https://github.com/andreyz11288/web-weather "
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/luxplanjay/webpack-starter-kit/issues"
+    "url": "https://github.com/andreyz11288/web-weather/issues"
   },
-  "homepage": "https://github.com/luxplanjay/webpack-starter-kit#readme",
+  "homepage": "https://github.com/andreyz11288/web-weather#readme",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -60,8 +60,10 @@
     "lodash.debounce": "^4.0.8",
     "popper.js": "^1.16.1",
     "svg-sprite-loader": "^5.1.1",
+
     "sweetalert": "^2.1.2",
     "sweetalert2": "^10.13.0",
+
     "swiper": "^6.4.5"
   }
 }

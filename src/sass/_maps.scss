@@ -1,5 +1,13 @@
 .maps {
+<<<<<<< HEAD
   @extend %container-style;
+=======
+  margin: 0 auto;
+  width: 900px;
+  @media screen and (max-width: 767px) {
+    width: 90%;
+  }
+>>>>>>> 8b4f5d67aa31eeadcbb67776d8b36d5bec6d8fa3
 }
 .maps-buttons {
   padding: 0;
@@ -8,6 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   @media screen and (max-width: 479px) {
     flex-direction: column;
     button {
@@ -20,12 +29,18 @@
       width: 100%;
     }
   }
+=======
+>>>>>>> 8b4f5d67aa31eeadcbb67776d8b36d5bec6d8fa3
   button {
     @extend %buttons-style;
     background-color: transparent;
     outline: none;
     cursor: pointer;
+<<<<<<< HEAD
     // box-shadow: 0 1px 3px #575555 inset;
+=======
+    box-shadow: 0 1px 3px #575555 inset;
+>>>>>>> 8b4f5d67aa31eeadcbb67776d8b36d5bec6d8fa3
   }
 }
 .map {
@@ -41,9 +56,16 @@
   padding-bottom: 15px;
   margin-top: 10px;
   text-align: center;
+<<<<<<< HEAD
   cursor: pointer;
   // box-shadow: 0 1px 3px #575555 inset;
   // &:hover {
   //   box-shadow: none;
   // }
+=======
+  box-shadow: 0 1px 3px #575555 inset;
+  &:hover {
+    box-shadow: none;
+  }
+>>>>>>> 8b4f5d67aa31eeadcbb67776d8b36d5bec6d8fa3
 }

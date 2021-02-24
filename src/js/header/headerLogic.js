@@ -16,11 +16,18 @@ export default class HeaderLogic {
              if (refs.headerInput.value === '') {
             return;
         }
+<<<<<<< HEAD
              return refs.headerInput.value;
+=======
+             return console.log(refs.headerInput.value);
+>>>>>>> 8b4f5d67aa31eeadcbb67776d8b36d5bec6d8fa3
          }   
     }
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 8b4f5d67aa31eeadcbb67776d8b36d5bec6d8fa3
