@@ -1,7 +1,7 @@
 {
   "name": "webpack-starter-kit",
   "version": "1.1.0",
-  "description": "",
+  "description": "Для корректной работы SASS-компилятора и других инструментов, необходимо один\r раз глобально поставить дополнительные пакеты, выполнив в терминале следующие\r команды. Пользователям MacOS ничего делать не нужно.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --env.mode development --config ./webpack/config.js",
@@ -60,6 +60,8 @@
     "lodash.debounce": "^4.0.8",
     "popper.js": "^1.16.1",
     "svg-sprite-loader": "^5.1.1",
-    "swiper": "^6.4.1"
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^10.13.0",
+    "swiper": "^6.4.5"
   }
 }
