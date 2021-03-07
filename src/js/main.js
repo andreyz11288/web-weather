@@ -2,35 +2,20 @@ import refs from './refs';
 import HeaderLogic from './header/headerLogic';
 import mapsMarkup from '../templates/maps.hbs';
 import MyMap from './maps/maps';
-<<<<<<< HEAD
 import SliderLogic from './slider/slider';
 import FetchNews from './news/fetchNews';
 import AppendNewsMarkup from './news/appendNewsMarkup';
 import WeatherLogic from './weather/weatherLogic';
 import './header/theme-switch';
-=======
-
-import SliderLogic from './slider/slider'
-
->>>>>>> 8b4f5d67aa31eeadcbb67776d8b36d5bec6d8fa3
 
 const headerLogic = new HeaderLogic();
 const myMap = new MyMap();
 const sliderLogic = new SliderLogic();
-<<<<<<< HEAD
 const fetchNews = new FetchNews();
 const weatherLogic = new WeatherLogic();
 
 const mainRefs = {
   body: document.querySelector('body'),
-=======
-
-
-const headerLogic = new HeaderLogic();
-const myMap = new MyMap();
-
-const mainRefs = {
->>>>>>> 8b4f5d67aa31eeadcbb67776d8b36d5bec6d8fa3
   header: document.querySelector('.header'),
   main: document.querySelector('.main'),
 };
@@ -39,7 +24,6 @@ mainRefs.header.addEventListener('click', evt => {
   headerLogic.historyApi(evt);
   headerLogic.searchQuery(evt);
 
-<<<<<<< HEAD
   if (evt.target.getAttribute('href') === '/forecast') {
     mainRefs.main.innerHTML = '';
     weatherLogic.renderThreeDaysWeather();
@@ -54,15 +38,11 @@ mainRefs.header.addEventListener('click', evt => {
     $spinner.delay(500).fadeOut();
     $preloader.delay(500).fadeOut('slow');
 
-=======
-  if (evt.target.getAttribute('href') === '/maps') {
->>>>>>> 8b4f5d67aa31eeadcbb67776d8b36d5bec6d8fa3
     mainRefs.main.innerHTML = '';
     mainRefs.main.innerHTML = mapsMarkup();
     myMap.initializeMap();
     myMap.codeAddress();
   }
-<<<<<<< HEAD
   if (evt.target.getAttribute('href') === '/news') {
     const { main } = refs;
     main.innerHTML = '';
@@ -131,42 +111,3 @@ window.addEventListener('keydown', evt => {
     document.querySelector('.header-button').click();
   }
 })
-=======
-
-  
-  if (evt.target.classList.contains('header-button')) {
-    const location = window.location.href.split('/');
-    if (location[location.length - 1] ===  'photo') {
-      sliderLogic.inputSearchValue(refs.headerInput.value)
-    }  
-
-  if (evt.target.classList.contains('header-button')) {
-    const location = window.location.href.split('/');
-
-    if (location[location.length - 1] !== 'maps') {
-      return;
-    }
-    myMap.codeAddress();
-  }
-  
-  if (evt.target.getAttribute('href') === "/photo"){
-    
-    sliderLogic.inputSearchValue(refs.headerInput.value)
-  }
-
-});
-
-mainRefs.main.addEventListener('click', evt => {
-  if (evt.target.dataset.layer) {
-    evt.preventDefault();
-
-    myMap.eventListenerOnButtons(evt);
-  }
-
-
-  if (evt.target.getAttribute('class') !== "photo") {
-    evt.preventDefault();       
-  }
-
-});
->>>>>>> 8b4f5d67aa31eeadcbb67776d8b36d5bec6d8fa3
